@@ -1,0 +1,92 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Lista de Usuários
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/admin/users">Usuários</a></li>
+      </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Informações da Conta</h3>
+          </div>
+          <!-- /.box-header -->
+          <!-- form start -->
+          <form role="form" action="/admin/account" method="post">
+
+            <div class="box-footer">
+              <button type="submit" class="btn btn-success">Editar</button>
+            </div>
+
+            <div class="box-body">
+              <div class="form-group col-md-6">
+                <label for="desperson">Nome Empresa</label>
+                <input type="text" class="form-control" id="desnome_emp" name="desnome_emp" placeholder="Digite o nome"
+                  value="{$account.desnome_emp}">
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="desemail">CNPJ</label>
+                  <input type="text" class="form-control" id="descnpj" name="descnpj" placeholder="Digite o e-mail"
+                    value="{$account.descnpj}">
+                </div>
+                <div class="form-group col-md-6">               
+                    <label for="nrphone">DDD</label>
+                    <input type="tel" size="50px" class="form-control " id="desddd" name="desddd" placeholder="DDD"
+                      value="{$account.desddd}">               
+                </div>
+  
+                <div class="form-group col-md-6">
+                  <label for="nrphone">Telefone</label>
+                  <input type="tel" class="form-control" id="destelefone" name="destelefone"
+                    placeholder="Digite o telefone" value="{$account.destelefone}">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="desemail">Email</label>
+                  <input type="email" class="form-control" id="desemail" name="desemail" placeholder="Digite o e-mail"
+                    value="{$account.desemail}">
+                </div>
+
+              </div>
+
+          <div class="box-body">
+              <div class="form-group col-md-6">
+                <label for="deslogin">Conta</label>
+                <input type="text" class="form-control" id="desconta" name="desconta" placeholder="Digite o login"
+                  value="{$account.desconta}">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="nrphone">Agência</label>
+                <input type="tel" class="form-control" id="desagencia" name="desagencia" placeholder="Digite o telefone"
+                  value="{$account.desagencia}">
+              </div>
+              <div class="form-group col-md-6">
+                  <label for="nrphone">Código Banco</label>
+                  <input type="tel" class="form-control" id="desbanco" name="desbanco" placeholder="codigo banco"
+                    value="{$account.desbanco}">
+              </div>
+              <input type="hidden" class="form-control" id="desiduser" name="desiduser" 
+               value="{$user}">
+
+               <input type="hidden" class="form-control" id="desidconta" name="desidconta" 
+               value="{$account.desidconta}">
+          </div>                 
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

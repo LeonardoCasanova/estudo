@@ -1,0 +1,21 @@
+{
+    "name": "LeonardoCasanova/ecommerce",
+    "authors": [
+        {
+            "name": "Leonardo Casanova",
+            "email": "leo.casanova94@hotmail.com"
+        }
+    ],
+    "require": {
+    	"phpmailer/phpmailer":"5.2.22",
+    	"slim/slim":"2.0",
+        "rain/raintpl":"3.0.0" ,
+        "guzzlehttp/guzzle": "^6.2@dev",
+        "fzaninotto/faker": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Estoque\\": "vendor\\estoque\\php-classes\\src"
+        }
+    }
+}
